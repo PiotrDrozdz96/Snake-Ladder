@@ -1,0 +1,90 @@
+
+body{
+  background:url(wallpaper.jpg);
+  background-size:100% 100%;
+}
+.board
+{
+  float: left;
+  background:url(board.jpg);
+  background-size:cover;
+  box-sizing: border-box;
+  border: 2px solid black;
+  width: 900px;
+  height: 900px;
+}
+
+.pawn{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -80px;
+  top: 865px;
+}
+.menu{
+  text-align: center;
+}
+
+.panel{
+  border: 2px solid;
+  border-color: #115701;
+  margin: 10px;
+  display:inline-block;
+  border-radius: 5px;
+}
+
+/*t r b l  */
+
+.panel-heading{
+  background: #115701;
+  color: white;
+  padding: 5px 60px 5px 60px;
+}
+
+.panel-body{
+  background: #92af05;
+
+}
+
+.panel-body button{
+  width:100%;
+  padding: 5px 50px 5px 50px;
+  display: block;
+}
+
+.panel-body input{
+    font-size: 20px;
+  }
+
+.panel-body img{
+  width: 50px;
+  height: 50px;
+}
+
+#players div{
+  border:1px solid;
+  border-color: #115701;
+  margin: 2px;
+  display:none;
+}
+
+#players div.active{
+  display:block;
+}
+
+#createPanel div.pawns{
+  width:150px;
+  display:inline-block;
+  margin:0 ;
+}
+
+#createPanel div.pawns img{
+  border:2px solid;
+  border-color: #92af05;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+#createPanel div.pawns img.choosen{
+  border-color: #115701;
+}

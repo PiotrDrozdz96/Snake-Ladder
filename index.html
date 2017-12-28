@@ -1,0 +1,59 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script src="jquery-3.2.1.js"></script>
+<script src="snakeScript.js"></script>
+
+	<title>Snake</title>
+</head>
+	<body>
+	<img class="board" src="board.jpg">
+
+	<div class='menu'>
+		<div class='panel'>
+			<div class='panel-heading'>Panel</div>
+			<div class='panel-body'>
+
+				<div id='players'></div>
+
+				<div id='Rollingdices' style='display:none'>
+					<img src='droll.gif'></img><img src='droll.gif'></img>
+					<button id='roll'>Roll</button>
+				</div>
+
+				<div id='dices' style=display:none>
+					<img id='d1' src=d0.png></img>
+					<img id='d2' src=d0.png></img>
+					<button id='move'>Move It</button>
+				</div>
+
+				<div id='createPanel' style='display:none'>
+					<input type="text" id='name' value="Player" size=10></input></br>
+					<div class='pawns'>
+						<img src='char1.png'/>
+		  			<img src='char2.png'/>
+						<img src='char3.png'/>
+		  			<img src='char4.png'/>
+						<img src='char5.png'/>
+		  			<img src='char6.png'/>
+						<img src='char7.png'/>
+		  			<img src='char8.png'/>
+						<img src='char9.png'/>
+		  			<img src='char0.png'/>
+					</div>
+				</div>
+				<button id='create'>Create Character</button>
+
+				<div id='pawnLack' style='display:none'>You must choose pawn</div>
+				<div id='nameLack' style='display:none'>You must put your name</div>
+				<button id='startGame' style='display:none'>Start Game</button>
+			</div>
+			<div id='winner' style='display:none'>is Winnner!</div>
+		</div>
+	</div>
+	</body>
+</html>
